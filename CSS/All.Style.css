@@ -223,3 +223,7 @@ hr {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzGTAXbgGFX895L4UVZPSxE4cc_cMi0EqW7Z0XYi_3EfEmfWcP&usqp=CAU");
   color: #fff;
 }
+.pagination{
+  margin: auto;
+  text-align: center;
+}
