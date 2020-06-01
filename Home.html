@@ -4,7 +4,9 @@
 <title>លាត សុផាត</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="./js/My.js"></script>
@@ -31,12 +33,12 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">ជម្រើស<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><button class="tablinkPage" onclick="openPage('History', this, '#4CAF50')"id="defaultOpen">សៀវភៅប្រវត្តិវិទ្យា</button></li>
-            <li><button class="tablinkPage" onclick="openPage('Story', this, '#4CAF50')"id="defaultOpen">រឿងនិទាន</button></li>
-            <li><button class="tablinkPage" onclick="openPage('Drama', this, '#4CAF50')"id="defaultOpen">ល្ខោននិយាយ</button></li>
-            <li><button class="tablinkPage" onclick="openPage('Video', this, '#4CAF50')"id="defaultOpen">វីដេអូ</button></li>
-            <li><button class="tablinkPage" onclick="openPage('OldSong', this, '#4CAF50')"id="defaultOpen">សំនៀងដើម</button></li>
-            <li><button class="tablinkPage" onclick="openPage('NewSong', this, '#4CAF50')"id="defaultOpen">សំនៀងសម័យ</button></li>
-            <li><button class="tablinkPage" onclick="openPage('clothes', this, '#4CAF50')"id="defaultOpen">សម្លៀកបំពាក់</button></li>
+            <li><button class="tablinkPage" onclick="openPage('Story', this, '#4CAF50')">រឿងនិទាន</button></li>
+            <li><button class="tablinkPage" onclick="openPage('Drama', this, '#4CAF50')">ល្ខោននិយាយ</button></li>
+            <li><button class="tablinkPage" onclick="openPage('Video', this, '#4CAF50')">វីដេអូ</button></li>
+            <li><button class="tablinkPage" onclick="openPage('OldSong', this, '#4CAF50')">សំនៀងដើម</button></li>
+            <li><button class="tablinkPage" onclick="openPage('NewSong', this, '#4CAF50')">សំនៀងសម័យ</button></li>
+            <li><button class="tablinkPage" onclick="openPage('clothes', this, '#4CAF50')">សម្លៀកបំពាក់</button></li>
           </ul>
         </li>
         <li><a href="#">អំពីយើង</a></li>
@@ -105,28 +107,149 @@
   </form>
 </div>
 
-<!-- ========================== Body =============================   -->
+<!-- ========================== Body​​​ Container =============================   -->
 
 <div class="container">
-  <div class="tabcontent">
-
+<!-- =================================== សៀវភៅប្រវត្តិវិទ្យា  =================================== -->
+<div id="History" class="tabcontent">
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">  
+      </div>
+    </div>
+</div>
+<!-- =================================== រឿងនិទាន  =================================== -->
+<div id="Story" class="tabcontent">
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4"> 
+      </div>
+    </div>
+</div>
+<!-- =================================== ល្ខោននិយាយ  =================================== -->
+  <div id="Drama" class="tabcontent">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3>      
+    </div>
+  </div>
+  </div>
+<!-- =================================== វីដេអូ  =================================== -->
+  <div id="Video" class="tabcontent">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3>      
+    </div>
+  </div>
+  </div>
+<!-- =================================== សំនៀងដើម  =================================== -->
+  <div id="OldSong" class="tabcontent">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3>      
+    </div>
+  </div>
+  </div>
+<!-- =================================== សំនៀងសម័យ  =================================== -->
+  <div id="NewSong" class="tabcontent">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3>      
+    </div>
+  </div>
+  </div>
+<!-- =================================== សំលៀកបំពាក់  =================================== -->
+<div id="clothes" class="tabcontent">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3>      
+    </div>
   </div>
 </div>
+
+<!-- ======================================= Footer ============================================ -->
+<footer>
+    <div class="row">
+      <div class="col-sm-4">
+          <address>
+            
+          </address> 
+      </div>
+      <div class="col-sm-4">
+          <div class="social-media">
+
+          </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="about-us">
+
+            </div>
+      </div>
+    </div>
+</footer>
+<footer style="text-align: center;">
+@LeatSophat0202
+</footer>
+
+
+
+
+
+
+
+</div>
+
 </body>
 <script>
   function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinkPage");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-  document.getElementById("defaultOpen").click();
+  tablinks = document.getElementsByClassName("tablinkPage");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
 </script>
 </html>
