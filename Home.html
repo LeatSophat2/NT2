@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="./CSS/All.Style.css">
 </head>
 <body onload="checkCookie()">
+
 <!-- ==================================== Nav Bar ================================== -->
 
 <nav class="navbar navbar-inverse">
@@ -29,13 +30,13 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">ជម្រើស<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">សៀវភៅប្រវត្តិ</a></li>
-            <li><a href="#">រឿងនិទាន</a></li>
-            <li><a href="#">សៀវភៅបិដក</a></li>
-            <li><a href="#">វីដេអូ</a></li>
-            <li><a href="#">រូបភាព</a></li>
-            <li><a href="#">សំនៀងជំនាន់ដើម</a></li>
-            <li><a href="#">សំនៀងសម័យ</a></li>
+            <li><button class="tablinkPage" onclick="openPage('History', this, '#4CAF50')"id="defaultOpen">សៀវភៅប្រវត្តិវិទ្យា</button></li>
+            <li><button class="tablinkPage" onclick="openPage('Story', this, '#4CAF50')"id="defaultOpen">រឿងនិទាន</button></li>
+            <li><button class="tablinkPage" onclick="openPage('Drama', this, '#4CAF50')"id="defaultOpen">ល្ខោននិយាយ</button></li>
+            <li><button class="tablinkPage" onclick="openPage('Video', this, '#4CAF50')"id="defaultOpen">វីដេអូ</button></li>
+            <li><button class="tablinkPage" onclick="openPage('OldSong', this, '#4CAF50')"id="defaultOpen">សំនៀងដើម</button></li>
+            <li><button class="tablinkPage" onclick="openPage('NewSong', this, '#4CAF50')"id="defaultOpen">សំនៀងសម័យ</button></li>
+            <li><button class="tablinkPage" onclick="openPage('clothes', this, '#4CAF50')"id="defaultOpen">សម្លៀកបំពាក់</button></li>
           </ul>
         </li>
         <li><a href="#">អំពីយើង</a></li>
@@ -105,19 +106,27 @@
 </div>
 
 <!-- ========================== Body =============================   -->
-<!-- <p id="jqueryExample">
-  <input type="text" class="date end" />
-</p>
-<script type="text/javascript" src="datepair.js"></script>
-<script type="text/javascript" src="jquery.datepair.js"></script>
-<script>
-  $('#jqueryExample .date').datepicker({
-      'format': 'm/d/yyyy',
-      'autoclose': true
-  });
-  // initialize datepair
-  $('#jqueryExample').datepair();
-</script> -->
+<button >សម្លៀកបំពាក់</button>
+<div class="container">
+  <div class="tabcontent">
 
+  </div>
+</div>
 </body>
+<script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinkPage");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "red";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+  document.getElementById("defaultOpen").click();
+</script>
 </html>
