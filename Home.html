@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<title>លាត សុផាត</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./js/My.js"></script>
+<link rel="stylesheet" href="./CSS/All.Style.css">
+</head>
+<body onload="checkCookie()">
+<!-- ==================================== Nav Bar ================================== -->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">លាត សុផាត</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">ទំព័រដើម</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ជម្រើស<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">សៀវភៅប្រវត្តិ</a></li>
+            <li><a href="#">រឿងនិទាន</a></li>
+            <li><a href="#">សៀវភៅបិដក</a></li>
+            <li><a href="#">វីដេអូ</a></li>
+            <li><a href="#">រូបភាព</a></li>
+            <li><a href="#">សំនៀងជំនាន់ដើម</a></li>
+            <li><a href="#">សំនៀងសម័យ</a></li>
+          </ul>
+        </li>
+        <li><a href="#">អំពីយើង</a></li>
+        <li><a href="#">ម៉ោង <span id="Timedemo"></span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-user"></span>បង្កើតគណនី</a></li>
+        <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> ចូលគណនី</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+
+ <!-- ឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲ  Login MODAL   ឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲឲ -->
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./Asset/Logo2.jpg" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="uname"><b>ឈ្មោះអ្នកប្រើប្រាស់</b></label>
+      <input type="text" placeholder="ឈ្មោះអ្នកប្រើប្រាស់" name="uname" required>
+      <label for="psw"><b>លេខសំងាត់</b></label>
+      <input type="password" placeholder="លេខសំងាត់" name="psw" required>
+      <button type="submit">ចូល</button>
+      <label><input type="checkbox" checked="checked" name="remember"> ចងចាំលេខសំងាត់</label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">បោះបង់</button>
+      <span class="psw">បានភ្លេច<a href="#">លេខសំងាត់?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- 00000000000000000000000000 Sign Up 00000000000000000000000000000 -->
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./Asset/Logo2.jpg" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <h1>បង្កើតគណនី</h1>
+      <p>សូមបំពេញព័ត៌មានរបស់អ្នកដើម្បីបង្កើតគណនី</p>
+      <hr>
+      <label for="email"><b>អ៊ីម៉ែល</b></label>
+      <input type="text" placeholder="អ៊ីម៉ែល" name="email" required>
+      <label for="psw"><b>បញ្ចូលលេខសំងាត់</b></label>
+      <input type="password" placeholder="បញ្ចូលលេខសំងាត់" name="psw" required>
+      <label for="psw-repeat"><b>បញ្ចូលលេខសំងាត់ឡើងវិញ</b></label>
+      <input type="password" placeholder="បញ្ចូលលេខសំងាត់ឡើងវិញ" name="psw-repeat" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> ចងចាំលេខសំងាត់
+      </label>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">បោះបង់</button>
+        <button type="submit" class="signupbtn">បង្កើតគណនី</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- ========================== Body =============================   -->
+
+
+</body>
+</html>
