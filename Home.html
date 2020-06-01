@@ -110,6 +110,7 @@
 <!-- ========================== Body​​​ Container =============================   -->
 
 <div class="container">
+
 <!-- =================================== សៀវភៅប្រវត្តិវិទ្យា  =================================== -->
 <div id="History" class="tabcontent">
     <div class="row">
@@ -237,19 +238,6 @@
 
 </body>
 <script>
-  function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinkPage");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-document.getElementById("defaultOpen").click();
+  document.getElementById("defaultOpen").click();
 </script>
 </html>
