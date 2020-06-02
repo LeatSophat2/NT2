@@ -4,12 +4,11 @@
 * {
     box-sizing: border-box;
     /* color: #fff; */
-    font-size: 20px ;
     
 }
 body {
     font-family: 'Chenla', cursive;
-    height: 100%;
+    width: 100%;
     background-size: cover;
     background-position: fixed;
     /* color: #fff !important; */
@@ -241,4 +240,77 @@ hr {
   width: 100%;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzGTAXbgGFX895L4UVZPSxE4cc_cMi0EqW7Z0XYi_3EfEmfWcP&usqp=CAU");
   background-size: cover;
+}
+/* jssor slider loading skin spin css */
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+.jssorb053 .i {
+  position: absolute;
+  cursor: pointer;
+}
+
+  .jssorb053 .i .b {
+      fill: #fff;
+      fill-opacity: 0.5;
+  }
+
+  .jssorb053 .i:hover .b {
+      fill-opacity: .7;
+  }
+
+.jssorb053 .iav .b {
+  fill-opacity: 1;
+}
+
+.jssorb053 .i.idn {
+  opacity: .3;
+}
+
+.jssora093 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.jssora093 .c {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 400;
+  stroke-miterlimit: 10;
+}
+
+.jssora093 .a {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 400;
+  stroke-miterlimit: 10;
+}
+
+.jssora093:hover {
+  opacity: .8;
+}
+
+.jssora093.jssora093dn {
+  opacity: .6;
+}
+
+.jssora093.jssora093ds {
+  opacity: .3;
+  pointer-events: none;
 }
