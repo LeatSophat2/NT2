@@ -324,3 +324,40 @@ hr {
 a{
   font-size: 15px;
 }
+
+/* ====================== Gallery 2============================== */
+.jssorb051 .i {
+  position:
+  absolute;
+  cursor:pointer;
+}
+.jssorb051 .i .b {
+  fill:#fff;
+  fill-opacity:0.5;
+  stroke:#000;
+  stroke-width:400;
+  stroke-miterlimit:10;
+  stroke-opacity:0.5;
+}
+.jssorb051 .i:hover .b {
+  fill-opacity:.7;
+}
+.jssorb051 .iav .b {
+  fill-opacity: 1;
+}
+.jssorb051 .i.idn {
+  opacity:.3;
+}
+.tabcontent{
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+.slider1_container{
+  position: relative; 
+  top: 0px; 
+  left: auto; 
+  width: 809px; 
+  height: 456px; 
+  overflow: hidden;
+}
