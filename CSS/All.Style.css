@@ -133,27 +133,36 @@ input[type=text]:focus, input[type=password]:focus {
   box-shadow: 0px 0px 4px 3px rgba(0, 162, 255, 0.586);
 }
 button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
+  /* background-color: #4CAF50; */
+  color: #fff;
   margin: 8px 0;
   border: none;
+  opacity: 0.9;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  background-color: #05bbff;
+  text-align: center;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  font-size: 18px;
 }
 button:hover {
   opacity:1;
 }
+button.btn_profile:hover, a:hover {
+  opacity: 0.7;
+}
 /* Extra styles for the cancel button */
-.cancelbtn {
+/* .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
-}
+} */
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
+  height: 45px;
 }
 /* The Modal (background) */
 .modal {
@@ -185,11 +194,9 @@ hr {
   }
 }
 .navbar{
+  border: none;
+    box-shadow: 0px 6px 7px -3px #a5a5a5;
     border-radius: 0;
-    border:1px solid gold;
-    border-top: none;
-    border-right: none;
-    border-left: none;
     background: #fff;
   }
 
@@ -216,6 +223,7 @@ hr {
  padding: 5px;
  background-color: #fff;
  color: #000;
+font-size: 15px;
 }
 .tablinkPage:hover{
   background: #ddd;
@@ -239,6 +247,17 @@ hr {
   animation-duration: 1.6s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+.jssor_1{
+  position:relative;
+  margin:0 auto;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  visibility:hidden;
+  box-shadow: 0px 6px 7px -3px #a5a5a5;
 }
 
 @keyframes jssorl-009-spin {
@@ -406,18 +425,7 @@ a{
   font-size: 18px;
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+
 img.profile{
 border-radius: 10px;
 }
@@ -427,17 +435,15 @@ a {
   color: black;
 }
 
-button.btn_profile:hover, a:hover {
-  opacity: 0.7;
-}
+
 
 .card_1{
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.col-sm-3>img{
+.col-sm-3>img,.slide_form{
   width: 100%;
   /* border-radius: 10px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -446,114 +452,116 @@ button.btn_profile:hover, a:hover {
 /* <!-- =================================== contact  =================================== --> */
 
     
-    /* style inputs and link buttons */
-    input,
-    .btn {
-      width: 100%;
-      padding: 12px;
-      border: none;
-      border-radius: 4px;
-      margin: 5px 0;
-      opacity: 0.85;
-      display: inline-block;
-      font-size: 17px;
-      line-height: 20px;
-      text-decoration: none; /* remove underline from anchors */
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .btn_1{
-      width: 100%;
-      padding: 12px;
-      border: none;
-      border-radius: 4px;
-      margin: 5px 0;
-      opacity: 0.85;
-      display: inline-block;
-      font-size: 17px;
-      line-height: 20px;
-      background: #000;
-      text-decoration: none; /* remove underline from anchors */
-    }
-    
-    input:hover,
-    .btn:hover {
-      opacity: 1;
-    }
-    
-    /* add appropriate colors to fb, twitter and google buttons */
-    .fb {
-      background-color: #3B5998;
-      color: white;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    
-    .twitter {
-      background-color: #55ACEE;
-      color: white;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    
-    .google {
-      background-color: #dd4b39;
-      color: white;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    
-    /* style the submit button */
-    input[type=submit] {
-      background-color: #fff;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      color: #000;
-      cursor: pointer;
-    }
-    
-    input[type=submit]:hover {
-      background-color: #ddd;
-    outline: 2px solid rgb(39, 154, 255) !important;
-    box-shadow: 0px 0px 4px 3px rgba(0, 162, 255, 0.586);
-    }
-    
-    /* Two-column layout */
-    .col {
-      float: left;
-      width: 50%;
-      margin: auto;
-      padding: 0 50px;
-      margin-top: 6px;
-    }
-    
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    /* vertical line */
-    .vl {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      border: 2px solid #ddd;
-      height: 175px;
-    }
-    
-    /* text inside the vertical line */
-    .vl-innertext {
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #f1f1f1;
-      border: 1px solid #ccc;
-      border-radius: 50%;
-      padding: 8px 10px;
-    }
-    
-    /* hide some text on medium and large screens */
-    .hide-md-lg {
-      display: none;
-    }
-    
+  /* style inputs and link buttons */
+  input[type="text"],input[type="password"],input[type="submit"],
+  .btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn_1{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    background: #000;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input[type=submit]:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #000;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:focus {
+    background-color: #ddd;
+  /* outline: 2px solid rgb(39, 154, 255) !important; */
+  outline: hidden;
+  box-shadow: 0px 0px 4px 3px rgba(0, 162, 255, 0.586);
+  }
+  
+  
+  /* Two-column layout */
+  .col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* vertical line */
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+  
 
     
     /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
@@ -623,4 +631,15 @@ button.btn_profile:hover, a:hover {
 .col-xs-8, 
 .col-xs-9{
   padding: 15px !important;
+}
+
+/* ========================== Clock =============================== */
+
+canvas#canvas{
+  box-shadow: 0px 0px 5px 1px #a5a5a5;
+  border-radius: 10%;
+  /* max-width: 100px;
+  width: 50px;
+  height: 100px;
+  margin: auto; */
 }
