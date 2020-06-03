@@ -6,7 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="./js/My.js"></script>
 <link rel="stylesheet" href="./CSS/All.Style.css">
 </head>
@@ -29,7 +31,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#" class="tablinkPage" onclick="openPage('home', this, '#4CAF50')"id="defaultOpen">ទំព័រដើម</a></li>
+        <li class="active"><a class="tablinkPage" onclick="openPage('home', this, '#4CAF50')"id="defaultOpen">ទំព័រដើម</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">ជម្រើស<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -45,7 +47,7 @@
           </ul>
         </li>
         
-        <li><a href="#">អំពីយើង</a></li>
+        <li ><a class="tablinkPage" onclick="openPage('aboutme', this, '#4CAF50')">អំពីយើង</a></li>
         <li><a href="#">ម៉ោង <span id="Timedemo"></span></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -422,18 +424,117 @@
       <!-- Jssor Slider End -->
 </div>
 
-<!-- ========================================== Pages ============================================== -->
+<!-- =================================== About Me  =================================== -->
 
+<!-- <div id="aboutme" class="tabcontent"> -->
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <h2>About Me</h2>
+        <img class="profile" src="./Asset/Logo3.jpg" alt="LEAT Sophat" style="width:100%">
+        <h1>LEAT Sophat</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <div class="card_1">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">
+        <img src="./Asset/My Logo.jpg" alt="">
+      </div>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg">
+        <img src="./Asset/My Logo.jpg" alt="">
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- <button class="tablinkPage" onclick="openPage('Gallery', this, '#4CAF50')">រូបភាព</button> -->
+
+<!-- =================================== Profile  =================================== -->
+
+<!-- <div id="Profile" class="tabcontent"> -->
+
+<!-- </div> -->
+<!-- <button class="tablinkPage" onclick="openPage('Gallery', this, '#4CAF50')">រូបភាព</button> -->
+
+<!-- =================================== contact  =================================== -->
+
+<div id="Contact" class="tabcontent">
+      <form action="/action_page.php">
+        <div class="row">
+          <h2 style="text-align:center">Login with Social Media or Manually</h2>
+          <div class="vl">
+            <span class="vl-innertext">or</span>
+          </div>
+    
+          <div class="col">
+            <a href="#" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+             </a>
+            <a href="#" class="twitter btn">
+              <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+            </a>
+            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+              </i> Login with Google+
+            </a>
+          </div>
+    
+          <div class="col">
+            <div class="hide-md-lg">
+              <p>Or sign in manually:</p>
+            </div>
+    
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+          </div>
+        </div>
+      </form>
+    </div>
+</div> 
+   <div id="Contact" class="container1 tabcontent">
+      <div class="row">
+        <div class="col">
+          <a href="#" style="color:white" class="btn_1">Sign up</a>
+        </div>
+        <div class="col">
+          <a href="#" style="color:white" class="btn_1">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================== Pages ============================================== -->
+<!-- 
 <ul class="pagination justify-content-center">
   <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
   <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
   <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
   <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
   <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-</ul>
+</ul> -->
+
+
 
 <!-- ======================================= Footer ============================================ -->
 
+<div class="container-fluid">
 <footer class="footerMenu">
     <div class="row">
       <div class="col">
@@ -447,84 +548,84 @@
               <h4>Cambodia</h4>
               <canvas id="canvas" width="100" height="100"style="box-shadow: 0px 0px 5px 1px #a5a5a5;border-radius: 10%;"></canvas>
 
-              <!-- ===================================== Clock ====================================== -->
+              <!-- ===================================== Clock script ====================================== -->
 
               <script>
-               var canvas = document.getElementById("canvas");
-               var ctx = canvas.getContext("2d");
-               var radius = canvas.height / 2;
-               ctx.translate(radius, radius);
-               radius = radius * 0.95
-               setInterval(drawClock, 1000);
+                  var canvas = document.getElementById("canvas");
+                  var ctx = canvas.getContext("2d");
+                  var radius = canvas.height / 2;
+                  ctx.translate(radius, radius);
+                  radius = radius * 0.95
+                  setInterval(drawClock, 1000);
 
-               function drawClock() {
-                 drawFace(ctx, radius);
-                 drawNumbers(ctx, radius);
-                 drawTime(ctx, radius);
-               }
-               function drawFace(ctx, radius) {
-                 var grad;
-                 ctx.beginPath();
-                 ctx.arc(0, 0, radius, 0, 2*Math.PI);
-                 ctx.fillStyle = '#000';
-                 ctx.fill();
-                 grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
-                 grad.addColorStop(0.1, '#ffa');
-                 grad.addColorStop(0.5, '#ffbe79');
-                 grad.addColorStop(0.6, '#fff');
-                 ctx.strokeStyle = grad;
-                 ctx.lineWidth = radius*0.1;
-                 ctx.stroke();
-                 ctx.beginPath();
-                 ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
-                 ctx.fillStyle = '#ff5959';
-                 ctx.fill();
-               }
-               function drawNumbers(ctx, radius) {
-                 var ang;
-                 var num;
-                 ctx.font = radius*0.15 + "px arial";
-                 ctx.textBaseline="middle";
-                 ctx.textAlign="center";
-                 for(num = 1; num < 13; num++){
-                   ang = num * Math.PI / 6;
-                   ctx.rotate(ang);
-                   ctx.translate(0, -radius*0.85);
-                   ctx.rotate(-ang);
-                   ctx.fillText(num.toString(), 0, 0);
-                   ctx.rotate(ang);
-                   ctx.translate(0, radius*0.85);
-                   ctx.rotate(-ang);
-                 }
-               }
-               function drawTime(ctx, radius){
-                   var now = new Date();
-                   var hour = now.getHours();
-                   var minute = now.getMinutes();
-                   var second = now.getSeconds();
-                   //hour
-                   hour=hour%12;
-                   hour=(hour*Math.PI/6)+
-                   (minute*Math.PI/(6*60))+
-                   (second*Math.PI/(360*60));
-                   drawHand(ctx, hour, radius*0.5, radius*0.07);
-                   //minute
-                   minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
-                   drawHand(ctx, minute, radius*0.8, radius*0.07);
-                   // second
-                   second=(second*Math.PI/30);
-                   drawHand(ctx, second, radius*0.9, radius*0.02);
-               }
-               function drawHand(ctx, pos, length, width) {
-                   ctx.beginPath();
-                   ctx.lineWidth = width;
-                   ctx.lineCap = "round";
-                   ctx.moveTo(0,0);
-                   ctx.rotate(pos);
-                   ctx.lineTo(0, -length);
-                   ctx.stroke();
-                   ctx.rotate(-pos);
-               }
+                  function drawClock() {
+                    drawFace(ctx, radius);
+                    drawNumbers(ctx, radius);
+                    drawTime(ctx, radius);
+                }
+                function drawFace(ctx, radius) {
+                  var grad;
+                  ctx.beginPath();
+                  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+                  ctx.fillStyle = '#000';
+                  ctx.fill();
+                  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+                  grad.addColorStop(0.1, '#ffa');
+                  grad.addColorStop(0.5, '#ffbe79');
+                  grad.addColorStop(0.6, '#fff');
+                  ctx.strokeStyle = grad;
+                  ctx.lineWidth = radius*0.1;
+                  ctx.stroke();
+                  ctx.beginPath();
+                  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+                  ctx.fillStyle = '#ff5959';
+                  ctx.fill();
+                }
+                function drawNumbers(ctx, radius) {
+                  var ang;
+                  var num;
+                  ctx.font = radius*0.15 + "px arial";
+                  ctx.textBaseline="middle";
+                  ctx.textAlign="center";
+                  for(num = 1; num < 13; num++){
+                    ang = num * Math.PI / 6;
+                    ctx.rotate(ang);
+                    ctx.translate(0, -radius*0.85);
+                    ctx.rotate(-ang);
+                    ctx.fillText(num.toString(), 0, 0);
+                    ctx.rotate(ang);
+                    ctx.translate(0, radius*0.85);
+                    ctx.rotate(-ang);
+                  }
+                }
+                function drawTime(ctx, radius){
+                    var now = new Date();
+                    var hour = now.getHours();
+                    var minute = now.getMinutes();
+                    var second = now.getSeconds();
+                    //hour
+                    hour=hour%12;
+                    hour=(hour*Math.PI/6)+
+                    (minute*Math.PI/(6*60))+
+                    (second*Math.PI/(360*60));
+                    drawHand(ctx, hour, radius*0.5, radius*0.07);
+                    //minute
+                    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+                    drawHand(ctx, minute, radius*0.8, radius*0.07);
+                    // second
+                    second=(second*Math.PI/30);
+                    drawHand(ctx, second, radius*0.9, radius*0.02);
+                  }
+                  function drawHand(ctx, pos, length, width) {
+                    ctx.beginPath();
+                    ctx.lineWidth = width;
+                    ctx.lineCap = "round";
+                    ctx.moveTo(0,0);
+                    ctx.rotate(pos);
+                    ctx.lineTo(0, -length);
+                    ctx.stroke();
+                    ctx.rotate(-pos);
+                }
                </script>
             </center>
           </div>
@@ -542,6 +643,7 @@
 
 
 </div>
+
 </body>
 <script>document.getElementById("defaultOpen").click();</script>
 </html>
