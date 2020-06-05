@@ -48,6 +48,11 @@ img.avatar {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+@media (min-width: 768px){.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+    color: #000;
+}
+}
 .navbar-toggle{
     margin-right: auto;
 }
@@ -146,9 +151,15 @@ button {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  
 }
 button:hover {
-  opacity:1;
+  opacity: 1;
+    background: #ffa900;
+    box-shadow: 0px 4px 10px -5px #000;
+    border-radius: 20px;
 }
 button.btn_profile:hover, a:hover {
   opacity: 0.7;
@@ -351,7 +362,7 @@ font-size: 15px;
 }
 .navbar-inverse .navbar-brand:hover{
   color: #000;
-  background: #ddd;
+  background: #fff;
 }
 .navbar-inverse .navbar-toggle{
   box-shadow: 6px 0px 7px -3px #a5a5a5;
@@ -430,8 +441,13 @@ a{
   border-radius: 10px;
   text-align: center;
   font-family: arial;
+  padding: 5px;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
 }
-
+.card:hover{
+  background: #f5f5f5;
+}
 .title {
   color: grey;
   font-size: 18px;
@@ -439,21 +455,38 @@ a{
 
 
 img.profile{
-border-radius: 10px;
+    border-radius: 50%;
+    width: 70%;
+    transition: all 0.3s ease;
 }
+img.profile:hover{
+    border-radius: 50%;
+    width: 70%;
+    border: 2px solid #33eeff;
+    box-shadow: 1px 0px 10px 1px #33aaff;
+}
+
 a {
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-
-
 .card_1{
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 8px -6px #dddddd; 
+  background: #fefefe;
+  
+}
+.card_1:hover{
+ box-shadow: 0px 10px 1px -8px #33aaff;
+ border:0px; 
+}
+.card_1:active{
+ box-shadow: 0px 10px 1px -8px #ff5500;
+ border:0px; 
 }
 .col-sm-3>img,.slide_form{
   width: 100%;
@@ -642,7 +675,7 @@ a {
 .col-xs-7, 
 .col-xs-8, 
 .col-xs-9{
-  padding: 15px !important;
+  padding: 10px !important;
 }
 
 /* ========================== Clock =============================== */
